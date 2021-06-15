@@ -1,0 +1,361 @@
+/* css of main page, my profile page,about us page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+root{
+    font-size:1rem;
+   
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: yellow;
+}
+
+.logo1 {
+    height: 20vh;
+    width: 16vw;
+    color:yellow;
+}
+#logo_res{
+    height: 100%;
+    width: 100%;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: yellow;
+}
+#title1 {
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100vw;
+    background-color: rgb(101, 0, 169);
+}
+.navbar {
+    height: 17vh;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.he::after {
+    position:relative;
+    display: block;
+    content: " ";
+    width: 0%;
+    height: 0.1rem;
+    transition: width 0.3s;
+    background-color: yellow;
+    bottom: 2px;
+}
+.he:hover::after{
+    width:100%;
+    transition: width 0.3s;
+}
+
+#heading1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-top: 2rem;
+}
+
+#greeting, #info {
+    width: 40vw;
+    height: 30vh;
+}
+#greeting {
+    font-size: 2rem;
+    text-align: center;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(101, 0, 169); 
+    border-radius: 0.5rem;
+}
+
+
+.mvs {
+    height: max-content;
+    width: 90%;
+    background-color: rgb(101, 0, 169);
+    padding: 1.4rem;
+    margin: 1.3rem;
+    border-radius: 1.2rem;
+    font-size: larger;
+}
+#logo2{
+    height: 10vh;
+    width: 4vw;
+}
+#logo11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banking {
+ text-align: center;
+ display: flex;
+ flex-direction: row;
+ transition: all ease-in-out 0.5s;
+ scroll-behavior: smooth;
+}
+
+#banking_head
+{
+    text-align: center;
+    font-size: larger;
+}
+.b_inner {
+    margin: 2rem;
+    padding: 1rem;
+    width: 19vw;
+    height: 32vh;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.0px );
+-webkit-backdrop-filter: blur( 3.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.img_fit{
+    width: 80%;
+    height: 80%;
+    margin-top: 1rem;
+}
+.b_inner a{
+    text-decoration: none;
+    color:yellow;
+    background-color: rgb(101, 0, 169);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.intro{
+    background-image: url("photo1.jpg");
+    height: 60vh;
+    width: 90%;
+    background-size: 100% 100%;
+}
+
+#firstline {
+    font-size: 2.0rem;
+    color: white;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+#secondline{
+    font-size: 1.3rem;
+    color: white;
+    margin-left:10%;
+}
+#learnmore{
+    margin-top: 1%;
+    margin-left: 10%;
+    padding: 1rem;
+    color: rgb(101, 0, 169);
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+#upkey {
+    position: fixed;
+    z-index: 999;
+    right: 5%;
+    bottom: 5%;
+    width: 3vw;
+    height: 6vh;
+    background-color: yellow;
+
+}
+#ta{
+    display:none;
+}
+#perinfo {
+    width: 532px;
+    height: 514px;
+    max-height: 100%;
+    max-width: 90%;
+    background: rgba( 255, 233, 0, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#pro{
+    height: 19vh;
+    width: 100%;
+}
+#res1{
+    height: 77%;
+    width: 100%;
+}
+#ac_info{
+    font-family: 'Bangers', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color:rgb(101, 0, 169);
+    font-size: 1.5rem;
+}
+
+#popupd,#popupw,#popupsend {
+    background: rgba( 0, 0, 0, 0.7 );
+    height: 100%;
+    width: 100%;
+    top:0;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#depositcontent,#withdrawcontent,#sendcontent{
+    background-color: rgba( 255, 255, 255, 1 );
+    color: black;
+    height: 300px;
+    width: 600px;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    border-radius: 2rem;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#close{
+    position: absolute;
+    right:15px;
+    top:15px;
+    cursor: pointer;
+    color:red;
+}
+
+#submitdeposit,#submitwithdraw,#submitsend{
+    position: relative;
+    height: 2.5rem;
+    width: max-content;
+    /* background-color: yellow; */
+    color: black;
+    padding: 3px;
+    border-radius: 0.4rem;
+    
+}
+#submitdeposit,#submitwithdraw a {
+    text-decoration: none;
+    color: black;
+}
+
+#submitdeposit:hover ,#submitwithdraw:hover,#submitsend:hover{
+    color: yellow;
+    background-color: black;
+}
+#deposit {
+    height: 2rem;
+    width: 10rem;
+}
+
+#submitdeposit,#submitwithdraw,#submitsend > div{
+    margin: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(101, 0, 169);
+}
+
+.foot{
+    height: 10%;
+    width:15%;
+}
+.foot > a img{
+    height: 100%;
+    width: 2vw;
+}
+#socialmedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+#info1,#info2{
+    width: 450px;
+    height: 300px;
+    margin-left: 2rem;
+    background-color: rgb(101, 0, 169);
+    border-radius: 1rem;
+    margin: 2rem;
+    max-height: 100%;
+    max-width: 50%;
+}
+#allinfo, #devinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#devinfo{
+    width: 78rem;
+    height: 19rem;
+    max-width: 100%;
+    margin: 2rem;
+
+}
+#profile,#desc{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+#prof{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#desc{
+    background-color: rgb(101, 0, 169);
+}
+#desc > div{
+    margin: 1rem;
+    padding: 0.5rem;
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x:auto; */
+}
+
+root{
+    font-size: 1rem;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: yellow;
+    margin: 2rem;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+}
+.inner1,.inner2{
+    height: max-content;
+    width: 30vw;
+    font-size: 1.5rem;
+    
+}
+
+#logo{
+width: 100%;
+height: 100%;
+}
+#button_start {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin: auto;
+    background-color: yellow;
+}
+.wrapper2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+#button1{
+    position: relative;
+    bottom:1rem;
+    height: 2.5rem;
+    width: max-content;
+    /* background-color: yellow; */
+    color: black;
+    padding: 3px;
+    border-radius: 0.4rem;
+    
+}
+#button1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#button1:hover a{
+    color: yellow;
+    background-color: black;
+}
+
