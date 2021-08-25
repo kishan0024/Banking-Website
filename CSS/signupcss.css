@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+root{
+    font-size: 1rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(101, 0, 169);
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+    height: 66vh;
+    width: 40vw;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transform: translateY(20vh);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+#inner1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 100%;
+}
+#inner1 a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: yellow;
+}
+#selected{
+    border-bottom: 0.2rem solid yellow;
+}
+#inner1 > div:hover a{
+    background-color: yellow;
+    color: rgb(101, 0, 169);
+    border-bottom:0.2rem solid rgb(101, 0, 169) ;
+}
+#nameform,#passwordform,#mail,#confpass1{
+    height: 4vh;
+    width: 90%;
+    clear: both;
+    margin: 2rem;
+    padding: 1rem;
+    text-align: left;
+}
+label {
+    display: inline-block;
+    width:100px;
+    text-align: left;
+    font-size: large;
+    color: yellow;
+}
+
+#signup{
+    display: block;
+    padding: 0.4rem;
+    color:yellow;
+    background-color: rgb(101, 0, 169);
+}
+.submitdata {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#newuser{
+    margin-top: 2rem;
+    color:yellow;
+}
+#newuser a{
+    color:rgb(255, 255, 255);
+}
